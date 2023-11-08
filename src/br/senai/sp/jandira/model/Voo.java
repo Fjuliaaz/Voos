@@ -1,11 +1,11 @@
 package br.senai.sp.jandira.model;
 
-public class Cadastro {
+abstract class Voo {
         private String companhias, origem, destino, horaSaida, dataPartida;
         private int Npassageiros, numeroVoo;
 
-        public Cadastro(String companhias, String destino, String origem, String horaSaida,
-                            String dataPartida, Integer numeroVoo, Integer Npassageiros){
+        public Voo(String companhias, String destino, String origem, String horaSaida,
+                   String dataPartida, Integer numeroVoo, Integer Npassageiros){
 
             this.companhias = companhias;
             this.destino = destino;
